@@ -14,8 +14,7 @@ to relate to captcha validation.
 .. image:: http://imagebin.org/index.php?mode=image&id=224536
    :alt: Types configuration
 
-Remembar to configure collective.recaptcha here:[[BR]]
-/path/to/your/site/@@recaptcha-settings
+Remember to configure collective.recaptcha here: /path/to/your/site/@@recaptcha-settings
 
 Then, creating a new AT configured to deal with captcha validation, you'll be able
 to see captcha field at the form bottom
