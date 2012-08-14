@@ -1,0 +1,27 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="collective.atcaptchavalidation">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <adapter factory=".validator.CaptchaValidation" />
+
+  <cmf:registerDirectory name="skins" directory="skins" recursive="True"/>
+
+  <adapter
+    factory=".extender.CaptchaSchemaExtender"
+    provides="archetypes.schemaextender.interfaces.ISchemaExtender"
+    name="collective.atcapthcavalidation.schemaextender" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.atcaptchavalidation"
+      directory="profiles/default"
+      description="Installs the collective.atcaptchavalidation package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+</configure>
