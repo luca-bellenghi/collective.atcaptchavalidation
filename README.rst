@@ -26,7 +26,7 @@ Dependencies
  * Plone 4.2 (Not tested on older versions)
  * `collective.recaptcha`__
  * `archetypes.schemaextender`__ (to extends AT dinamically)
- * `plone.app.registry`__ (for the settings storage)
+ * `plone.app.registry`__ (to store settings)
 
 __ http://pypi.python.org/pypi/collective.recaptcha/
 __ http://pypi.python.org/pypi/archetypes.schemaextender/
