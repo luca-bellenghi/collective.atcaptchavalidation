@@ -1,0 +1,80 @@
+# additive translation for Products.Ploneboard
+# RedTurtle Team
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Products.Ploneboard\n"
+"POT-Creation-Date: 2012-08-14 16:35+0000\n"
+"PO-Revision-Date: 2012-08-08 12:00+0100\n"
+"Last-Translator: RedTurtle Team\n"
+"Language-Team: MIME-Version: 1.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1\n"
+"Language-Code: Language-Name: Preferred-Encodings: utf-8 latin1\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.atcaptchavalidation\n"
+"X-Is-Fallback-For: it-ch it-it\n"
+
+#: ./controlpanel.py:54
+msgid "Cancel"
+msgstr ""
+
+#: ./extender.py:33
+msgid "Captcha"
+msgstr ""
+
+#: ./extender.py:34
+msgid "Fill the field to validate the form"
+msgstr ""
+
+#: ./controlpanel.py:42
+msgid "Save"
+msgstr ""
+
+# ./profiles/default/controlpanel.xml
+msgid "Select type to validate with captcha"
+msgstr ""
+
+#. Default: "Changes canceled."
+#: ./controlpanel.py:57
+msgid "atcaptchavalidation_form_action_change_cancelled"
+msgstr ""
+
+#. Default: "Changes saved."
+#: ./controlpanel.py:47
+msgid "atcaptchavalidation_form_action_change_saved"
+msgstr ""
+
+#. Default: "No changes made."
+#: ./controlpanel.py:51
+msgid "atcaptchavalidation_form_action_no_change"
+msgstr ""
+
+#. Default: "Select here which kind of object should be capthca validated"
+#: ./controlpanel.py:37
+msgid "atcaptchavalidation_form_description"
+msgstr ""
+
+#. Default: "AT Captcha validation settings"
+#: ./controlpanel.py:39
+msgid "atcaptchavalidation_form_name"
+msgstr ""
+
+#. Default: "AT settings for captcha field"
+#: ./controlpanel.py:35
+msgid "atcaptchavalidation_form_title"
+msgstr ""
+
+#. Default: "Select portal types that should be captcha validated"
+#: ./controlpanel.py:23
+msgid "captcha_settings_help"
+msgstr ""
+
+#. Default: "Portal types that may use captcha validation"
+#: ./controlpanel.py:21
+msgid "captcha_settings_title"
+msgstr ""
+

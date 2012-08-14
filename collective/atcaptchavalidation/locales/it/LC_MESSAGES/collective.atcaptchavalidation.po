@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-08-14 16:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./controlpanel.py:54
+msgid "Cancel"
+msgstr "Annulla"
+
+#: ./extender.py:33
+msgid "Captcha"
+msgstr "Captcha"
+
+#: ./extender.py:34
+msgid "Fill the field to validate the form"
+msgstr "Compila il campo sottostante con il captcha per validare il form"
+
+#: ./controlpanel.py:42
+msgid "Save"
+msgstr "Salva"
+
+# ./profiles/default/controlpanel.xml
+msgid "Select type to validate with captcha"
+msgstr "Seleziona i tipi da validare tramite captcha"
+
+#. Default: "Changes canceled."
+#: ./controlpanel.py:57
+msgid "atcaptchavalidation_form_action_change_cancelled"
+msgstr "Modifiche annullate"
+
+#. Default: "Changes saved."
+#: ./controlpanel.py:47
+msgid "atcaptchavalidation_form_action_change_saved"
+msgstr "Modfiche salvate"
+
+#. Default: "No changes made."
+#: ./controlpanel.py:51
+msgid "atcaptchavalidation_form_action_no_change"
+msgstr "Nessuna modifica effettuata"
+
+#. Default: "Select here which kind of object should be capthca validated"
+#: ./controlpanel.py:37
+msgid "atcaptchavalidation_form_description"
+msgstr "Seleziona i tipi di oggetto che devono essere validati dal captcha"
+
+#. Default: "AT Captcha validation settings"
+#: ./controlpanel.py:39
+msgid "atcaptchavalidation_form_name"
+msgstr "Impostazioni per la validazione tramite captcha"
+
+#. Default: "AT settings for captcha field"
+#: ./controlpanel.py:35
+msgid "atcaptchavalidation_form_title"
+msgstr "Validazione tramite captcha"
+
+#. Default: "Select portal types that should be captcha validated"
+#: ./controlpanel.py:23
+msgid "captcha_settings_help"
+msgstr "Seleziona i tipi di oggetto che dovranno essere validati tramite il captcha"
+
+#. Default: "Portal types that may use captcha validation"
+#: ./controlpanel.py:21
+msgid "captcha_settings_title"
+msgstr "Tipi di contenuto che dovranno essere validati"
+

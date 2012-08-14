@@ -1,0 +1,23 @@
+# additive translation for Products.Ploneboard                                                                                                                                                                
+# RedTurtle Team
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Products.Ploneboard\n"
+"POT-Creation-Date: 2012-08-08 12:00+0000\n"
+"PO-Revision-Date: 2012-08-08 12:00+0100\n"
+"Last-Translator: RedTurtle Team\n"
+"Language-Team: "
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1\n"
+"Language-Code: "
+"Language-Name: "
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.atcaptchavalidation\n"
+"X-Is-Fallback-For: it-ch it-it\n"
+
+# ./profiles/default/controlpanel.xml
+msgid "Select type to validate with captcha"
+msgstr ""

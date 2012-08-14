@@ -9,6 +9,7 @@
     i18n_domain="collective.atcaptchavalidation">
 
   <five:registerPackage package="." initialize=".initialize" />
+  <i18n:registerTranslations directory="locales" />
   
   <include package="plone.app.registry" />
   <include package="Products.CMFCore" zcml:condition="have plone-4"

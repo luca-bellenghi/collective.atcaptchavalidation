@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Products.Archetypes import Field
 from AccessControl import ClassSecurityInfo
 from Products.Archetypes.Registry import registerField
@@ -18,7 +19,7 @@ InitializeClass(CaptchaWidget)
 
 registerWidget(CaptchaWidget,
                title='CaptchaWidget',
-               description=('Renders a collective.recaptcha widget'),
+               description=u'Renders a collective.recaptcha widget',
                used_for=('collective.atcaptchavalidation.Field.CaptchaField',)
                )
 

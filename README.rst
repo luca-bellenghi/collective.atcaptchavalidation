@@ -1,18 +1,21 @@
 Introduction
 ============
 
-This product provides a dummy field that allow to request cpatcha validation 
-(by collective.recaptcha) when a new object it's created.
+This product provides a dummy field that allow to request captcha validation 
+(through collective.recaptcha) when a new object it's created.
 
 How to use it
 =============
 
-Just install the product; then in the plone_contrl_panel you will find the new
+Just install the product; then in the plone_control_panel you will find the new
 entry "Select type to validate with captcha". Here you can select types you want
 to relate to captcha validation.
 
 .. image:: http://imagebin.org/index.php?mode=image&id=224536
    :alt: Types configuration
+
+Remembar to configure collective.recaptcha here:[[BR]]
+/path/to/your/site/@@recaptcha-settings
 
 Then, creating a new AT configured to deal with captcha validation, you'll be able
 to see captcha field at the form bottom
