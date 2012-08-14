@@ -1,40 +1,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:tal="http://xml.zope.org/namespaces/tal"
-    xmlns:metal="http://xml.zope.org/namespaces/metal"
-    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-    i18n:domain="plone">
-<head>
-    <title>
-    </title>
-</head>
-<body>
-    <!-- view macro is useless -->
-    <metal:view_macro define-macro="view"></metal:view_macro>
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone">
+  <head><title></title></head>
+  <body>
 
-    <!-- edit macro should draw the captcha widget -->
+    <!-- String Widgets -->
+    <metal:view_macro define-macro="view">
+    </metal:view_macro>
+
     <metal:define define-macro="edit">
-       <metal:use use-macro="field_macro | here/widgets/field/macros/edit">
-        <div tal:define="captcha_view nocall:here/@@captcha|nothing;">
-            <input name="captcha_control" type="hidden" value="1" />
-            <label for="captcha" i18n:translate="label_captcha">Captcha</label>
-            <span class="fieldRequired" title="Required"
-                  i18n:attributes="title"
-                  i18n:domain="plone" 
-                  i18n:translate="label_required">(Required)</span>  
-                 <div class="formHelp" i18n:translate="help_captcha">
-                   Provide the text in the image. Just to avoid spambots
-                 </div>                    
+      <metal:use use-macro="field_macro | context/widgets/field/macros/edit">
+        <div metal:fill-slot="widget_body">
+            <!-- Captcha Control -->    
+            <div class="field"          
+                 tal:define="captcha_view nocall:here/@@captcha|nothing;">
+                 <input name="captcha_control" type="hidden" value="1" />
                  <p tal:replace="structure captcha_view/image_tag" />
-               </div>  
-                          
-            </div>   
-          </div>
-       </metal:use>
+               </div>
+        </div>
+      </metal:use>
     </metal:define>
 
-    <!-- search macro is useless -->
-    <div metal:define-macro="search">
-       <div metal:use-macro="here/captchawidget/macros/view">
-    </div>
-</body>
+    <div metal:define-macro="search"></div>
+
+  </body>
+
 </html>

@@ -1,15 +1,22 @@
-from Products.Archetypes.interfaces import IObjectPreValidation
-from zope.component import adapts
-from zope.interface import Interface, implements
+
+from zope.interface import implements
+from Products.validation.interfaces import ivalidator
 
 
 class CaptchaValidation(object):
-    implements(IObjectPreValidation)
-    adapts(Interface)
+    implements(ivalidator)
 
-    def __init__(self, context):
-        super(CaptchaValidation, self).__init__()
-        self.context = context
+    def __init__(self, name):
+        self.name = name
 
-    def __call__(self, request):
-        return None
+    def __call__(self, value, *args, **kwargs):
+        request = kwargs['REQUEST']
+        instance = kwargs['instance']
+        captcha_view = instance.restrictedTraverse('@@captcha', None)
+        captcha_control = request.get('captcha_control', None)
+        if captcha_view and captcha_control:
+            captcha = request.get('recaptcha_response_field', '')
+            if not captcha_view.verify(captcha):
+                return "The captcha is wrong"
+        else:
+            return "Not possible to verify the captcha"

@@ -4,11 +4,15 @@
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="collective.atcaptchavalidation">
 
   <five:registerPackage package="." initialize=".initialize" />
-
-  <adapter factory=".validator.CaptchaValidation" />
+  
+  <include package="plone.app.registry" />
+  <include package="Products.CMFCore" zcml:condition="have plone-4"
+           file="permissions.zcml" />
 
   <cmf:registerDirectory name="skins" directory="skins" recursive="True"/>
 
@@ -17,6 +21,15 @@
     provides="archetypes.schemaextender.interfaces.ISchemaExtender"
     name="collective.atcapthcavalidation.schemaextender" />
 
+  <adapter factory=".controlpanel.CaptchaSettingsControlPanelAdapter" />
+
+  <browser:page
+      name="captchavalidation-settings"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.CaptchaSettingsControlPanel"
+      permission="cmf.ManagePortal"
+      />
+
   <genericsetup:registerProfile
       name="default"
       title="collective.atcaptchavalidation"
@@ -24,4 +37,9 @@
       description="Installs the collective.atcaptchavalidation package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+
+  <browser:resourceDirectory
+      name="collective.atcaptchavalidation.images"
+      directory="images"
+     />
 </configure>
