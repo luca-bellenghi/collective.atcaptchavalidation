@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-08-14 16:35+0000\n"
+"POT-Creation-Date: 2012-08-15 07:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 msgid "Cancel"
 msgstr "Annulla"
 
-#: ./extender.py:33
+#: ./extender.py:35
 msgid "Captcha"
 msgstr "Captcha"
 
-#: ./extender.py:34
+#: ./extender.py:36
 msgid "Fill the field to validate the form"
 msgstr "Compila il campo sottostante con il captcha per validare il form"
 
@@ -31,6 +31,7 @@ msgid "Save"
 msgstr "Salva"
 
 # ./profiles/default/controlpanel.xml
+#: ./profiles/default/controlpanel.xml
 msgid "Select type to validate with captcha"
 msgstr "Seleziona i tipi da validare tramite captcha"
 
@@ -64,6 +65,11 @@ msgstr "Impostazioni per la validazione tramite captcha"
 msgid "atcaptchavalidation_form_title"
 msgstr "Validazione tramite captcha"
 
+#. Default: "Not possible to verify the captcha"
+#: ./validator.py:24
+msgid "captcha_not_verified"
+msgstr "Impossibile verificare il codice captcha"
+
 #. Default: "Select portal types that should be captcha validated"
 #: ./controlpanel.py:23
 msgid "captcha_settings_help"
@@ -73,4 +79,14 @@ msgstr "Seleziona i tipi di oggetto che dovranno essere validati tramite il capt
 #: ./controlpanel.py:21
 msgid "captcha_settings_title"
 msgstr "Tipi di contenuto che dovranno essere validati"
+
+#. Default: "Collective AT Captcha Validation is not installed yet"
+#: ./extender.py:54
+msgid "not_installed_yet"
+msgstr "Collective AT Captcha validation non è stato installato"
+
+#. Default: "The captcha is wrong"
+#: ./validator.py:21
+msgid "wrong_captcha"
+msgstr "Codice captcha errato"
 

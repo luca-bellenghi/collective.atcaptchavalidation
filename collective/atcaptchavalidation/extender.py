@@ -15,7 +15,7 @@ from collective.atcaptchavalidation.controlpanel import ICaptchaSettingsControlP
 from collective.atcaptchavalidation.field import CaptchaField, CaptchaWidget
 from collective.atcaptchavalidation.validator import CaptchaValidation
 from collective.atcaptchavalidation import captchavalidationMessageFactory as _
-
+from collective.atcaptchavalidation import logger
 
 validation.register(CaptchaValidation('isValidCaptcha'))
 
@@ -46,11 +46,13 @@ class CaptchaSchemaExtender(object):
         return [prod['id'] for prod in qi.listInstalledProducts()]
 
     def get_captcha_types(self):
-        if 'collective.atcaptchavalidation' in self.get_installed():
+        try:
             registry = getUtility(IRegistry)
             settings = registry.forInterface(ICaptchaSettingsControlPanel)
             return settings.captcha_validated_fields or tuple()
-        return tuple()
+        except KeyError:
+            logger.error("Collective AT Captcha Validation is not installed yet")
+            return tuple()
 
     def getFields(self):
         """

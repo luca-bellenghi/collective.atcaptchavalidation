@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from zope.interface import implements
 from Products.validation.interfaces import ivalidator
+from collective.atcaptchavalidation import captchavalidationMessageFactory as _
 
 
 class CaptchaValidation(object):
@@ -17,6 +18,8 @@ class CaptchaValidation(object):
         if captcha_view and captcha_control:
             captcha = request.get('recaptcha_response_field', '')
             if not captcha_view.verify(captcha):
-                return "The captcha is wrong"
+                return _(u'wrong_captcha', default=u"The captcha is wrong")
+            return None
         else:
-            return "Not possible to verify the captcha"
+            return _(u"captcha_not_verified",
+                     default=u"Not possible to verify the captcha")

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.Ploneboard\n"
-"POT-Creation-Date: 2012-08-14 16:35+0000\n"
+"POT-Creation-Date: 2012-08-15 07:06+0000\n"
 "PO-Revision-Date: 2012-08-08 12:00+0100\n"
 "Last-Translator: RedTurtle Team\n"
 "Language-Team: MIME-Version: 1.0\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: ./extender.py:33
+#: ./extender.py:35
 msgid "Captcha"
 msgstr ""
 
-#: ./extender.py:34
+#: ./extender.py:36
 msgid "Fill the field to validate the form"
 msgstr ""
 
@@ -34,7 +34,7 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-# ./profiles/default/controlpanel.xml
+#: ./profiles/default/controlpanel.xml
 msgid "Select type to validate with captcha"
 msgstr ""
 
@@ -68,6 +68,11 @@ msgstr ""
 msgid "atcaptchavalidation_form_title"
 msgstr ""
 
+#. Default: "Not possible to verify the captcha"
+#: ./validator.py:24
+msgid "captcha_not_verified"
+msgstr ""
+
 #. Default: "Select portal types that should be captcha validated"
 #: ./controlpanel.py:23
 msgid "captcha_settings_help"
@@ -76,5 +81,15 @@ msgstr ""
 #. Default: "Portal types that may use captcha validation"
 #: ./controlpanel.py:21
 msgid "captcha_settings_title"
+msgstr ""
+
+#. Default: "Collective AT Captcha Validation is not installed yet"
+#: ./extender.py:54
+msgid "not_installed_yet"
+msgstr ""
+
+#. Default: "The captcha is wrong"
+#: ./validator.py:21
+msgid "wrong_captcha"
 msgstr ""
 

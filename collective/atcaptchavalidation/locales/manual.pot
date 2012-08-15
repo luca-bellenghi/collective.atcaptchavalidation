@@ -17,7 +17,3 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.atcaptchavalidation\n"
 "X-Is-Fallback-For: it-ch it-it\n"
-
-# ./profiles/default/controlpanel.xml
-msgid "Select type to validate with captcha"
-msgstr ""
