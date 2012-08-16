@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0'
+version = '0.9'
 
 setup(name='collective.atcaptchavalidation',
       version=version,
@@ -11,9 +11,10 @@ setup(name='collective.atcaptchavalidation',
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
-        "Framework :: Plone",
-        "Programming Language :: Python",
-        ],
+          "Framework :: Plone",
+          "Framework :: Plone :: 4.2",
+          "Programming Language :: Python",
+      ],
       keywords='archetypes catpcha field validation',
       author='lucabel',
       author_email='lucabel@gmail.com',
@@ -26,7 +27,8 @@ setup(name='collective.atcaptchavalidation',
       install_requires=[
           'setuptools',
           'collective.recaptcha',
-          'archetypes.schemaextender'
+          'archetypes.schemaextender',
+          'plone.app.registry',
       ],
       entry_points=""" """,
       )

@@ -1,6 +1,7 @@
 Introduction
 ============
 
+Sometimes I had to create AT that may be instantiated by anonymous users.
 This product provides a dummy field that allow to request captcha validation 
 (through collective.recaptcha) when a new object it's created.
 
