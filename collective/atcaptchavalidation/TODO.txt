@@ -1,0 +1,3 @@
+Should be nice to have
+[] Try to understand if is it possible to move the captcha field out from fieldset
+[] Check compatibility with Plone 3.X and adapt to works with it 
