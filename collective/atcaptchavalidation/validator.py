@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from zope.interface import implements
 from Products.validation.interfaces import ivalidator
-from collective.atcaptchavalidation import captchavalidationMessageFactory as _
+from Products.CMFPlone import PloneMessageFactory as _
 
 
 class CaptchaValidation(object):
